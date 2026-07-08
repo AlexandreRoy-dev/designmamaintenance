@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nouveau site en préparation | Mélanie Amigo Design</title>
+<meta name="description" content="Le nouveau site de Mélanie Amigo Design (MA Design), designer d'intérieur à Gatineau, est en préparation. Écrivez-nous en attendant." />
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://designma.ca/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Nouveau site en préparation | Mélanie Amigo Design" />
+<meta property="og:description" content="Un nouveau site est en préparation. Écrivez-nous en attendant." />
+<meta property="og:url" content="https://designma.ca/" />
+<meta property="og:image" content="https://static.showit.co/1200/SyHg66PoVPI7tOV64fOEkg/318140/accueil_ma_design.jpg" />
+<meta property="og:locale" content="fr_CA" />
+
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+<link rel="preconnect" href="https://static.showit.co" crossorigin />
+<link href="https://fonts.bunny.net/css?family=inclusive-sans:400,700|taviraj:300,300i,400,400i&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="https://static.showit.co/1600/SyHg66PoVPI7tOV64fOEkg/318140/accueil_ma_design.jpg" fetchpriority="high" />
+
+<style>
+  :root {
+    --ma-dark: #333333;
+    --ma-brown: #4f3e27;
+    --ma-brown-soft: #6b5740;
+    --ma-cream: #f7f5f2;
+    --ma-cream-deep: #efece7;
+    --ma-muted: #dddad5;
+    --ma-accent: #b08d57;
+    --font-serif: 'Taviraj', Georgia, serif;
+    --font-sans: 'Inclusive Sans', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    color: var(--ma-dark);
+    background: var(--ma-cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 62rem) {
+    .layout { grid-template-columns: 46% 54%; }
+  }
+
+  /* ---------- Visual panel ---------- */
+  .visual {
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1.75rem, 4vw, 3.25rem);
+    color: #fff;
+    background:
+      linear-gradient(180deg, rgba(38,29,17,0.55) 0%, rgba(38,29,17,0.15) 40%, rgba(38,29,17,0.65) 100%),
+      #4f3e27 url('https://static.showit.co/1600/SyHg66PoVPI7tOV64fOEkg/318140/accueil_ma_design.jpg') center/cover no-repeat;
+  }
+
+  @media (min-width: 62rem) {
+    .visual { min-height: 100vh; position: sticky; top: 0; }
+  }
+
+  .visual__brand {
+    font-size: 0.72rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .visual__caption { max-width: 26rem; }
+
+  .visual__tagline {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(1.5rem, 3.2vw, 2.35rem);
+    line-height: 1.25;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+
+  .visual__sub {
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    opacity: 0.92;
+    margin: 0;
+  }
+
+  .visual__place {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .visual__place::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.7;
+  }
+
+  /* ---------- Content panel ---------- */
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(2.25rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 3.5rem);
+  }
+
+  .inner {
+    width: 100%;
+    max-width: 34rem;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ma-accent);
+    margin: 0 0 1.1rem;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--ma-accent);
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(2rem, 4.6vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.15rem;
+    color: var(--ma-brown);
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--ma-brown-soft); }
+
+  .lede {
+    font-size: 1.05rem;
+    margin: 0 0 2rem;
+    color: #55504a;
+    max-width: 30rem;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.35rem 1.5rem;
+    padding: 1.6rem 0 0;
+    border-top: 1px solid var(--ma-muted);
+  }
+
+  @media (max-width: 26rem) {
+    .contact-info { grid-template-columns: 1fr; }
+  }
+
+  .contact-item { display: grid; gap: 0.25rem; align-content: start; }
+
+  .contact-key {
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ma-accent);
+  }
+
+  .contact-item a, .contact-item span:not(.contact-key) {
+    font-size: 0.98rem;
+    color: #4a463f;
+  }
+  .contact-item a { color: var(--ma-brown); text-decoration: none; font-weight: 700; }
+  .contact-item a:hover { text-decoration: underline; }
+
+  /* ---------- Form ---------- */
+  .form-wrap {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ma-muted);
+  }
+
+  .form-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ma-brown);
+    margin: 0 0 1.25rem;
+  }
+
+  form { display: grid; gap: 1rem; }
+
+  .row { display: grid; gap: 1rem; }
+  @media (min-width: 30rem) {
+    .row { grid-template-columns: 1fr 1fr; }
+  }
+
+  .field { display: grid; gap: 0.4rem; }
+
+  label {
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    color: #6b665f;
+  }
+  label .opt { color: #a49d92; }
+
+  input, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--ma-dark);
+    background: var(--ma-cream);
+    border: 1px solid var(--ma-muted);
+    border-radius: 2px;
+    padding: 0.72rem 0.9rem;
+    width: 100%;
+    transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--ma-brown);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(176, 141, 87, 0.14);
+  }
+  textarea { resize: vertical; min-height: 6.5rem; }
+
+  button {
+    font-family: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--ma-brown);
+    border: 1px solid var(--ma-brown);
+    border-radius: 2px;
+    padding: 0.95rem 1.5rem;
+    cursor: pointer;
+    transition: background 200ms ease, color 200ms ease;
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+  button:hover { background: transparent; color: var(--ma-brown); }
+  button:disabled { opacity: 0.5; cursor: default; }
+
+  .form-status {
+    margin: 0;
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--ma-muted);
+    background: var(--ma-cream);
+    border-radius: 2px;
+  }
+  .form-status[hidden] { display: none; }
+  .form-status.is-error { border-color: #c0392b; color: #c0392b; }
+
+  /* ---------- Footer bits ---------- */
+  .social {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem 1.6rem;
+  }
+  .social a {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--ma-brown);
+    text-decoration: none;
+    position: relative;
+  }
+  .social a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -3px;
+    width: 0; height: 1px;
+    background: var(--ma-brown);
+    transition: width 200ms ease;
+  }
+  .social a:hover::after { width: 100%; }
+
+  .copyright {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: #9a9288;
+    margin: 1.75rem 0 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ---------- Entrance animation ---------- */
+  .reveal { opacity: 0; transform: translateY(14px); animation: rise 700ms cubic-bezier(0.16,1,0.3,1) forwards; }
+  .reveal.d1 { animation-delay: 80ms; }
+  .reveal.d2 { animation-delay: 160ms; }
+  .reveal.d3 { animation-delay: 240ms; }
+  .reveal.d4 { animation-delay: 320ms; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation: none; opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Visual panel -->
+    <aside class="visual">
+      <p class="visual__brand reveal">Mélanie Amigo Design</p>
+      <div class="visual__caption reveal d2">
+        <p class="visual__tagline">Au-delà du décor.<br />Au cœur de vos décisions.</p>
+        <p class="visual__sub">Un studio de design d'intérieur québécois, où élégance rime avec simplicité.</p>
+        <span class="visual__place">Gatineau, QC</span>
+      </div>
+    </aside>
+
+    <!-- Content panel -->
+    <main class="content">
+      <div class="inner">
+        <p class="eyebrow reveal">Site en préparation</p>
+        <h1 class="reveal d1">Un nouveau site est <em>en préparation</em></h1>
+        <p class="lede reveal d2">
+          Nous peaufinons une toute nouvelle expérience pour vous présenter nos projets
+          de design d'intérieur. De retour très bientôt — écrivez-nous en attendant.
+        </p>
+
+        <div class="contact-info reveal d3">
+          <div class="contact-item">
+            <span class="contact-key">Courriel</span>
+            <a href="mailto:info@designma.ca">info@designma.ca</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-key">Téléphone</span>
+            <a href="tel:+18193604111">(819) 360-4111</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-key">Région</span>
+            <span>Gatineau, QC</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-key">Heures</span>
+            <span>Lun&ndash;Ven, 9h&nbsp;–&nbsp;17h<br />Sur rendez-vous seulement</span>
+          </div>
+        </div>
+
+        <div class="form-wrap reveal d4">
+          <p class="form-label">Écrivez-nous</p>
+
+          <form id="contact-form" action="https://formspree.io/f/mnjknwdz" method="POST">
+            <input type="hidden" name="_subject" value="Message depuis designma.ca (page maintenance)" />
+
+            <div class="row">
+              <div class="field">
+                <label for="name">Nom</label>
+                <input required type="text" id="name" name="name" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="email">Courriel</label>
+                <input required type="email" id="email" name="email" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="phone">Téléphone <span class="opt">(facultatif)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea required id="message" name="message"></textarea>
+            </div>
+
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true" />
+
+            <button type="submit" id="submit-btn">Envoyer le message</button>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+
+          <ul class="social">
+            <li><a href="https://lapiece.ca/fr/pros/636e6d6a323ad54b9a99c03c/ma-design" target="_blank" rel="noopener noreferrer">La Pièce</a></li>
+            <li><a href="https://www.facebook.com/melanieamigodesign/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/madesigndecor/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.threads.net/@madesigndecor" target="_blank" rel="noopener noreferrer">Threads</a></li>
+          </ul>
+
+          <p class="copyright">© <span id="year">2026</span> Mélanie Amigo Design</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    const btn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      status.hidden = true;
+      status.classList.remove('is-error');
+      btn.disabled = true;
+      btn.textContent = 'Envoi…';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (res.ok) {
+          form.reset();
+          status.textContent = 'Merci! Votre message a bien été envoyé. Nous vous répondrons sous peu.';
+          status.hidden = false;
+          btn.textContent = 'Message envoyé';
+        } else {
+          const data = await res.json().catch(function () { return {}; });
+          const msg = (data.errors && data.errors.map(function (er) { return er.message; }).join(', '))
+            || "Une erreur s'est produite. Veuillez réessayer ou nous écrire à info@designma.ca.";
+          status.textContent = msg;
+          status.classList.add('is-error');
+          status.hidden = false;
+          btn.disabled = false;
+          btn.textContent = 'Envoyer le message';
+        }
+      } catch (err) {
+        status.textContent = "Une erreur réseau s'est produite. Veuillez réessayer ou nous écrire à info@designma.ca.";
+        status.classList.add('is-error');
+        status.hidden = false;
+        btn.disabled = false;
+        btn.textContent = 'Envoyer le message';
+      }
+    });
+  </script>
+</body>
+</html>
