@@ -1,4 +1,4 @@
-# designma.ca — Page de maintenance (GitHub Pages)
+# designma.ca - Page de maintenance (GitHub Pages)
 
 Static "site en préparation" page for **designma.ca**, hosted on GitHub Pages while the
 new site is being built. Keeps the contact form live via Formspree (no backend needed).
@@ -34,7 +34,7 @@ git push -u origin main
 
 In IONOS → **Domains → designma.ca → DNS**:
 
-**Apex `designma.ca` — replace existing A record(s) with these four A records:**
+**Apex `designma.ca` - replace existing A record(s) with these four A records:**
 
 ```
 185.199.108.153
@@ -52,7 +52,7 @@ Optional IPv6 (AAAA):
 2606:50c0:8003::153
 ```
 
-**`www` subdomain — CNAME:**
+**`www` subdomain - CNAME:**
 
 ```
 www  →  <your-username>.github.io
@@ -72,7 +72,7 @@ www  →  <your-username>.github.io
 ## Reverting to live (later)
 
 To bring the real site back, restore the original **Showit** DNS records in IONOS
-(A / CNAME values Showit provided). No changes needed here — Showit is untouched.
+(A / CNAME values Showit provided). No changes needed here. Showit is untouched.
 
 ## Form
 
