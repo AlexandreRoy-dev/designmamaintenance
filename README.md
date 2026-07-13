@@ -76,6 +76,6 @@ To bring the real site back, restore the original **Showit** DNS records in IONO
 
 ## Form
 
-The form posts to Formspree endpoint `mnjknwdz` (reused from the existing site).
+The form posts to Formspree endpoint `mkoldnjd`.
 Submissions arrive at the email tied to that Formspree form. Confirm the `designma.ca`
 domain is allowlisted in the Formspree form settings if submissions are rejected.
